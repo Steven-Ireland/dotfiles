@@ -1,0 +1,49 @@
+!
+!XResources - Scientaster
+!
+
+URxvt.transparent: 	true
+URxvt.shading:		10
+URxvt.depth:		32
+URxvt.scrollStyle: 	rxvt
+URxvt.scrollBar: 	false
+URxvt.internalBorder: 	35
+URxvt.letterSpace: 	0
+URxvt*lineSpace:	1
+
+!URxvt.font: xft:Pragmata Pro Mono:style=bold:size=10
+URxvt.font: xft:Iosevka:style=bold:pixelsize=14:antialias=true
+
+
+#define bg 	[97]#312e39
+#define fg	#c0a79a
+#define blk 	#33303b
+#define bblk	#4f4b58
+#define red 	#87404f
+#define grn 	#4c9882
+#define ylw 	#71949a
+#define blu 	#615772
+#define mag	#783e57
+#define cyn 	#554757
+#define wht	#c0a79a
+
+*foreground: 	fg
+*background: 	bg
+
+*color0: 	blk
+*color8: 	bblk
+*color1: 	red
+*color9: 	red
+*color2: 	grn
+*color10: 	grn
+*color3: 	ylw
+*color11: 	ylw
+*color4: 	blu
+*color12: 	blu
+*color5: 	mag
+*color13: 	mag
+*color6: 	cyn
+*color14: 	cyn
+*color7: 	wht
+*color15: 	wht
+
