@@ -3,7 +3,7 @@
 !
 
 URxvt.transparent: 	true
-URxvt.shading:		10
+URxvt.shading:		20
 URxvt.depth:		32
 URxvt.scrollStyle: 	rxvt
 URxvt.scrollBar: 	false
@@ -15,7 +15,7 @@ URxvt*lineSpace:	1
 URxvt.font: xft:Iosevka:style=bold:pixelsize=14:antialias=true
 
 
-#define bg 	[97]#312e39
+#define bg  [50]#412e29
 #define fg	#c0a79a
 #define blk 	#33303b
 #define bblk	#4f4b58
@@ -46,4 +46,6 @@ URxvt.font: xft:Iosevka:style=bold:pixelsize=14:antialias=true
 *color14: 	cyn
 *color7: 	wht
 *color15: 	wht
+
+*borderColor:	mag
 

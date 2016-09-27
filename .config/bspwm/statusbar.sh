@@ -1,3 +1,5 @@
+num_mon="$(bspc query -M | wc -l)"
+
 while read -r line ; do
 	case $line in
 		S*)
