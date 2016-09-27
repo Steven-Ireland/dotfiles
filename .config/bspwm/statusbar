@@ -1,0 +1,22 @@
+
+#!/bin/sh
+
+BAR_HEIGHT=24
+BAR_FIFO=/tmp/bar-fifo
+
+BAR_WM_NAME=bspwm_panel
+
+if xdo id -a "$BAR_WM_NAME" > /dev/null; then
+	exit 1
+fi
+
+[ -e "$BAR_FIFO" ] && rm "$BAR_FIFO"
+mkfifo "BAR_FIFO"
+
+bspc config top_padding $BAR_HEIGHT
+bspc subscribe report > "$BAR_FIFO" &
+xtitle -sf 'T%s' > "$BAR_FIFO" &
+clock -sf 'S%a %H:%M' > "$BAR_FIFO" &
+
+./bar-script | lemonbar -a 32 -n "$BAR_WM_NAME" -g x$BAR_HEIGHT
+
