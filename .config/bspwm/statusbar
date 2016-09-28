@@ -18,7 +18,7 @@ mkfifo "$BAR_FIFO"
 bspc config bottom_padding $BAR_HEIGHT
 bspc subscribe report > "$BAR_FIFO" &
 xtitle -sf 'T%s' > "$BAR_FIFO" &
-while true; do echo "S$(date)" > "$BAR_FIFO"; sleep 1; done &
+while true; do date +"S%A %d/%m %_I:%M" > "$BAR_FIFO"; sleep 1; done &
 
 ~/.config/bspwm/statusbar.sh < "$BAR_FIFO" | lemonbar -b -a 32 -n "$BAR_WM_NAME" -g x$BAR_HEIGHT -f "$BAR_FONT"
 
