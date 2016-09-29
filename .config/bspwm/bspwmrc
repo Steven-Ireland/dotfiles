@@ -1,12 +1,13 @@
 #! /bin/sh
 
 sxhkd &
-~/.config/bspwm/statusbar &
+#~/.config/bspwm/statusbar &
+node ~/code/scripts/lemon/index.js &
 
 bspc config border_width        2
 bspc config window_gap          20
 
-bspc config split_ratio          0.50
+bspc config split_ratio          0.4915 # match wallpaper
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 bspc config focus_by_distance    true
@@ -14,5 +15,7 @@ bspc config history_aware_focus  true
 
 bspc monitor HDMI-0 	I II
 bspc monitor DVI-0	III IV
+
+bspc config -m HDMI-0 bottom_padding 30
 
 #~/.config/bspwm/autostart.sh &
