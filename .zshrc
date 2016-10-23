@@ -85,4 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias music="ncmpcpp"
-alias steam="weechat -r \"/connect bitlbee\""
+
+alias bspwmrc="vi ~/.config/bspwm/bspwmrc"
+
+alias update="sudo pacman -Syy; sudo pacman -Syu"

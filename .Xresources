@@ -12,8 +12,8 @@ URxvt.letterSpace: 	0
 URxvt*lineSpace:	1
 
 !URxvt.font: xft:Pragmata Pro Mono:style=bold:size=10
-URxvt.font: xft:Iosevka:style=bold:pixelsize=14:antialias=true
-
+URxvt.font: xft:Iosevka Nerd Font:style=bold:pixelsize=14:antialias=true
+!URxvt.font: xft:Iosevka:style=bold:pixelsize=14:antialias=true
 
 #define bg  [50]#412e29
 #define fg	#c0a79a
